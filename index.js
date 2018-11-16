@@ -13,3 +13,14 @@ function nowServing(queue) {
   // return "Currently serving " + queue.shift() + '.';
   return `Currently serving ${queue.shift()}.`
 }
+
+function currentLine(queue) {
+  if (queue.length === 0) {
+    "The line is currently empty."
+  }
+  var string = "The line is currently: ";
+  for (let i = 0; i < queue.length; i++) {
+    string += (i+1)  + '.' + ' ' + queue[i] + ', ';
+  }
+  return string;
+}
