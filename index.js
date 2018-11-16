@@ -9,6 +9,6 @@ function nowServing(queue) {
   if (queue == []) {
     return "There is nobody waiting to be served!"
   }
-  
+
   return queue.shift();
 }
