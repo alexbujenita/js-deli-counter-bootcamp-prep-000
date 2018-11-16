@@ -16,7 +16,7 @@ function nowServing(queue) {
 
 function currentLine(queue) {
   if (queue.length === 0) {
-    "The line is currently empty."
+  return  "The line is currently empty."
   }
   var string = "The line is currently: ";
   for (let i = 0; i < queue.length; i++) {
