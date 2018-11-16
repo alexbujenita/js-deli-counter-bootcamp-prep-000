@@ -9,7 +9,7 @@ function nowServing(queue) {
   if (queue.length === 0) {
     return "There is nobody waiting to be served!";
   }
-  
+
   // return "Currently serving " + queue.shift() + '.';
   return `Currently serving ${queue.shift()}.`
 }
