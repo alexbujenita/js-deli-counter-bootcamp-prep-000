@@ -9,7 +9,7 @@ function nowServing(queue) {
   if (queue.length === 0) {
     return "There is nobody waiting to be served!";
   }
-
+  
   // return "Currently serving " + queue.shift() + '.';
   return `Currently serving ${queue.shift()}.`
 }
@@ -20,6 +20,9 @@ function currentLine(queue) {
   }
   var string = "The line is currently: ";
   for (let i = 0; i < queue.length; i++) {
+    if (i === queue.length - 1) {
+      string += (i+1)  + '.' + ' ' + queue[i];
+    }
     string += (i+1)  + '.' + ' ' + queue[i] + ', ';
   }
   return string;
