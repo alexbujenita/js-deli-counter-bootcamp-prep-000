@@ -10,5 +10,5 @@ function nowServing(queue) {
     return "There is nobody waiting to be served!";
   }
 
-  return "Currently serving " + queue.shift();
+  return "Currently serving " + queue.shift() + '.';
 }
