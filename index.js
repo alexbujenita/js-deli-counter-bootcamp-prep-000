@@ -3,5 +3,5 @@ function takeANumber(currQueue, name) {
   console.log(currQueue);
   katzDeliLine.push(name);
   return `Welcome, ${name}. You are number ${currQueue.length + 1} in line.`
-  
+
 }
