@@ -6,8 +6,8 @@ function takeANumber(currQueue, name) {
 }
 
 function nowServing(queue) {
-  if (queue == []) {
-    return "There is nobody waiting to be served!"
+  if (queue.length === 0) {
+    return "There is nobody waiting to be served!";
   }
 
   return queue.shift();
